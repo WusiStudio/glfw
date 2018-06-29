@@ -400,3 +400,6 @@ if (GLFW_INSTALL)
     endif()
 endif()
 
+include_directories(deps)
+add_library(glad deps/glad.c)
+
